@@ -3,13 +3,10 @@ import {connect, MqttClient} from "mqtt";
 import lirc from "./lirc";
 import Config, {MappedConfigPaths} from "./lib/config";
 
-interface JSON {
-    [key: string]: string;
-}
 
 class Main {
     private client: MqttClient;
-    private topicValues: JSON;
+    private topicValues: Record<string, string>;
     private readonly config: MappedConfigPaths;
 
     constructor() {
@@ -23,7 +20,7 @@ class Main {
 
     onConnect() {
         console.log(`[${process.uptime()}] - Connected to MQT Broker....`);
-        this.client.subscribe(Config.getMQTTSubscriptionPaths(), (err) => {
+        this.client.subscribe(Config.getMQTTSubscriptionPaths(), function (err) {
             if (err) console.warn(err);
         });
     }
