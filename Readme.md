@@ -29,4 +29,4 @@ The program is stable and I am using it in a production environment, so there sh
 
 If you need additional features, create an Issue or contact me.
 
-&copy; 2022 Trickfilm400 
+&copy; 2022-2023 Trickfilm400 
