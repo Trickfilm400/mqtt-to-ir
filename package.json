@@ -1,6 +1,6 @@
 {
   "name": "mqtt-to-ir",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": ".",
   "main": "dist/index.js",
   "scripts": {
@@ -16,11 +16,11 @@
   "author": "Nico W. <info@ni-wa.de> (https://trickfilm400.de/)",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.8.7",
-    "typescript": "^5.2.2"
+    "@types/node": "^24.0.14",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "lirc-client": "^2.0.0",
-    "mqtt": "^5.1.2"
+    "mqtt": "^5.13.2"
   }
 }
